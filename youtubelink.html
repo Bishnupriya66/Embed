@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./images/ytlogo.ico">
+    <style>
+        body {
+            font-family: Arial;
+            background-color: black;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-left {
+            display: flex;
+            font-size: 20px;
+            margin-left: 5px;
+        }
+        .header-left img {
+            margin-left: 20px;
+        }
+        .header-center {
+            display: flex;
+        }
+        .bi bi-list{
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar {
+            width: 400px;
+            border:1px solid gray;
+            border-radius: 20px;
+            padding: 7px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .bi-mic-fill {
+            margin-left: 20px;
+            padding: 5px;
+            font-size: 20px;
+        }
+        .header-right img {
+            border-radius: 30px;
+        }
+        .header-right span {
+            margin-right: 20px;
+        }
+        .header-right {
+            padding: 5px;
+            font-size: 20px;
+        }
+        section {
+            margin-top: 15px;
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+        }
+        nav{
+            height: 760px;
+            overflow: auto;
+            position: relative;
+
+        }
+        nav div {
+            font-size: 17px;
+            margin-bottom: 10px;
+            padding-top: 15px;
+            padding-left: 5px;
+            margin-top: 10px;
+        }
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+            padding: 20px;
+            font-weight: bold;
+        }
+        .menu-play {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .row {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+        iframe {
+            width: 260px;
+            height: 150px;
+            border: none;
+            border-radius: 15px;
+            margin-left: 10px;
+            padding-left: 5px;
+        }
+        .row iframe {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="bi bi-list"></div>
+            <img src="images/youtube black.GIF" width="120">
+        </div>
+        <div class="header-center">
+            <div class="search-bar">Search <div class="bi bi-search"></div></div>
+           
+            <div class="bi bi-mic-fill"></div>
+        </div>
+        <div class="header-right">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell"></span>
+            <img src="images/ytlogo.jpg" width="30" height="20">
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div class="bi bi-house"> &nbsp;&nbsp; Home</div>
+            <div class="bi bi-film">  &nbsp; &nbsp;Shorts</div>
+            <div class="bi bi-collection-play"> &nbsp;&nbsp;Subscriptions</div>
+            <hr size="1" color="gray" width="100%">
+            <div class="bi bi-collection-play"> &nbsp;&nbsp;Library</div>
+            <div class="bi bi-clock-history"> &nbsp;&nbsp;History</div>
+            <div class="bi bi-play-btn"> &nbsp;&nbsp;Your videos</div>
+            <div class="bi bi-clock"> &nbsp;&nbsp;Watch later</div>
+            <div class="bi bi-hand-thumbs-up"> &nbsp;&nbsp;Liked videos </div>
+            <hr size="1" color="gray" width="100%">
+            &nbsp;Subscriptions
+            <div><img src="./images/wifistudy.jfif" width="20" height="20"> <span>&nbsp;&nbsp; Wifistudy</span></div>
+            <div><img src="./images/studyiq.jpg" width="20" height="20">&nbsp;&nbsp; Study IQ</div>
+            <div><img src="./images/Technical_Guruji_logo.jpg" width="20" height="20"> &nbsp;&nbsp;TechnicalGuru.</div>
+            <div><img src="./images/ibt.jfif" width="20" height="20"> &nbsp;&nbsp;IBT Online</div>
+            <hr size="1" color="gray" width="100%">
+            &nbsp;Explore
+            <div class="bi bi-fire"> &nbsp;&nbsp;Trending</div>
+            <div class="bi bi-music-note"> &nbsp;&nbsp;Music</div>
+            <div class="bi bi-film"> &nbsp;&nbsp;Films</div>
+            <div class="bi bi-broadcast"> &nbsp;&nbsp;Live</div>
+            <div class="bi bi-controller"> &nbsp;&nbsp;Gaming</div>
+            <div class="bi bi-newspaper"> &nbsp;&nbsp; News</div>
+            <div class="bi bi-trophy"> &nbsp;&nbsp;Sports</div>
+            <div class="bi bi-lightbulb"> &nbsp;&nbsp;Learning</div>
+            <div class="bi bi-bag-heart"> &nbsp;&nbsp;Fashion & beauty</div>
+        </nav>
+        <main>
+            <div class="main-nav">
+                <span>Home</span>
+                <span>Videos</span>
+                <span>Shorts</span>
+                <span>Live</span>
+                <span>PlayList</span>
+                <span>Community</span>
+                <span>Channels</span>
+                <span>About</span>
+                <span class="bi bi-chevron-right"></span>
+            </div>
+            <div class="menu-play">
+                Videos <span class="bi bi-play-fill"></span> Play All
+            </div>
+            <div class="row">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/n7QKf1UjbPs"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/3aCSr55lsgA"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/ODYycgNBvjE"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/4hXVsxH0oDU"></iframe>
+                </div>
+            </div>
+              <div class="row">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tICG_qs9O2cAZ"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/YdcK1nR2-yM"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/8367ETnagHo"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/8367ETnagHo"></iframe>
+                </div>
+
+            </div>
+            <div class="row">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/mIzBu9hi6o0"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/D95LyQzmWQs"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/TtybdXMOIIA"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/9IUBhYMTIuo"></iframe>
+                </div>
+            </div>  
+            <div class="row">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/-TaX7Wp5MvA"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/NpQbEadBq_w"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/25BkVBgFD9Y"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/_mD-ia6ng0A"></iframe>
+                </div>
+  
+        </main>
+    </section>
+</body>
+</html>
